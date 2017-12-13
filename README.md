@@ -11,20 +11,18 @@
 
 ## 扫码体验
 
-<p>
-<img src="https://cdn.it120.cc/apifactory/2017/09/15/487409738ebb80c44eda01c46d59b20c.jpg" width="200px">
-</p>
+![qr](https://github.com/Mocha-L/Fitness_wxApp/blob/master/res/my_qr.jpg)
 
 后台上传图片资源较大，加载较慢，不会P图，请谅解。
 
 
 ## 使用说明
 
-目前小程序内部使用的云服务器token，以及我的小程序APPID我也上传了。
+目前小程序内部使用的云API的token，以及我的小程序APPID我也上传了。
 
-下载全部代码就能体验，暂不知道会有什么安全隐患或者隐私泄露，如果有请提醒我，谢谢。
+下载SRC目录全部代码，在微信web开发工具打开就能查看和修改，暂不知道会有什么安全隐患或者隐私泄露，如果有请提醒我，谢谢。
 
-如果想修改自己使用需要申请云服务器和后台配置资源等，这些可以参考原项目[wechat-app-mall](https://github.com/EastWorld/wechat-app-mall)的README。
+如果想修改和自己使用需要申请云API账号和自行在后台配置资源文件等，这些可以参考原项目[wechat-app-mall](https://github.com/EastWorld/wechat-app-mall)README的使用说明。
 
 ## 其他说明
 
