@@ -11,9 +11,7 @@
 
 ## 扫码体验
 
-<p>
-<img src="https://cdn.it120.cc/apifactory/2017/09/15/487409738ebb80c44eda01c46d59b20c.jpg" width="200px">
-</p>
+![qr](https://github.com/Mocha-L/Fitness_wxApp/blob/master/res/my_qr.jpg)
 
 后台上传图片资源较大，加载较慢，不会P图，请谅解。
 
