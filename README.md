@@ -15,6 +15,19 @@
 
 后台上传图片资源较大，加载较慢，不会P图，请谅解。
 
+## 运行截图如下
+
+![index](https://github.com/Mocha-L/Fitness_wxApp/blob/master/res/index.png)
+![coach](https://github.com/Mocha-L/Fitness_wxApp/blob/master/res/coach.png)
+![goods](https://github.com/Mocha-L/Fitness_wxApp/blob/master/res/goods.png)
+![goods2](https://github.com/Mocha-L/Fitness_wxApp/blob/master/res/goods2.png)
+![appoint](https://github.com/Mocha-L/Fitness_wxApp/blob/master/res/appoint.png)
+![appoint2](https://github.com/Mocha-L/Fitness_wxApp/blob/master/res/appoint2.png)
+![mine](https://github.com/Mocha-L/Fitness_wxApp/blob/master/res/mine.png)
+![signin](https://github.com/Mocha-L/Fitness_wxApp/blob/master/res/signin.png)
+
+
+
 
 ## 使用说明
 
