@@ -23,6 +23,12 @@
 
 如果想修改和自己使用需要申请云API账号和自行在后台配置资源文件等，这些可以参考原项目[wechat-app-mall](https://github.com/EastWorld/wechat-app-mall)README的使用说明。
 
+有更详细的项目介绍，请点击[这里](http://mp.weixin.qq.com/s/PP80ZYsHJkLs4sIXLcbwQQ)查看。
+
+也欢迎关注我的公众号 燕幕自安 了解更多技术分享。
+
+![qr](https://github.com/Mocha-L/Fitness_wxApp/blob/master/res/my_qr2.jpg)
+
 ## 运行截图
 
 ![index](https://github.com/Mocha-L/Fitness_wxApp/blob/master/res/index.png)
