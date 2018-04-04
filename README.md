@@ -3,6 +3,8 @@
 
 ## 项目由来
 
+开源已关闭，需要的请联系我。
+
 该项目最原始代码来自于这里：[wechat-app-mall](https://github.com/EastWorld/wechat-app-mall)
 
 由于后续改动较多，且原项目也有较多更新，故未合入[wechat-app-mall](https://github.com/EastWorld/wechat-app-mall)
