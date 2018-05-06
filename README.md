@@ -3,7 +3,7 @@
 
 ## 项目由来
 
-开源已关闭，需要的请联系我。
+开源已关闭，需要的朋友可以关注我公众号，找到我的微信，加我微信，私发源码。
 
 该项目最原始代码来自于这里：[wechat-app-mall](https://github.com/EastWorld/wechat-app-mall)
 
