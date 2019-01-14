@@ -25,6 +25,8 @@
 也欢迎关注我的公众号 燕幕自安 了解更多技术分享。
 
 ![qr](https://github.com/Mocha-L/Fitness_wxApp/blob/master/res/my_qr2.jpg)
+![qr](https://github.com/Mocha-L/Fitness_wxApp/blob/master/res/lm.jpg)
+右边是新版本新界面，展示效果更好，需要的可以联系我。
 
 ## 运行截图
 
