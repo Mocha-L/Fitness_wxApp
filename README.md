@@ -1,15 +1,10 @@
 # Fitness_wxApp 健身房微信小程序
 一个做给健身房预约课程的微信小程序
 
-## 项目由来
+## 项目源码
 
 开源已关闭，需要的朋友可以关注我公众号，找到我的微信，加我微信，私发源码。
 
-该项目最原始代码来自于这里：[wechat-app-mall](https://github.com/EastWorld/wechat-app-mall)
-
-由于后续改动较多，且原项目也有较多更新，故未合入[wechat-app-mall](https://github.com/EastWorld/wechat-app-mall)
-
-需要做商城小程序的朋友可以去了解原项目。
 
 ## 扫码体验
 
