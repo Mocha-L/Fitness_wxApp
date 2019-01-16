@@ -11,7 +11,7 @@
 ![qr](https://github.com/Mocha-L/Fitness_wxApp/blob/master/res/my_qr.jpg)
 ![qr](https://github.com/Mocha-L/Fitness_wxApp/blob/master/res/lm.jpg)
 
-右边是新版本新界面，展示效果更好，需要的可以联系我。
+右边是新版本新界面，展示效果更好，需要的可以联系我(右边的源码是有偿提供的，169/小程序源码)。
 
 后台上传图片资源较大，加载较慢，不会P图，请谅解。
 
