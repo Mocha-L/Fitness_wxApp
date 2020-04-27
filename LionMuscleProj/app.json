@@ -1,0 +1,66 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/clock/clock",
+    "pages/clock/Recordfood",
+    "pages/login/login",
+    "pages/mine/mine",
+    "pages/Appointment1/Appointment1",
+    "pages/docard/docard",
+    "pages/signin/sign-in",
+    "pages/index/index",
+    "pages/goods-details/index",
+    "pages/shop-cart/index",
+    "pages/to-pay-order/index",
+    "pages/select-address/index",
+    "pages/address-add/index",
+    "pages/order-list/index",
+    "pages/order-details/index",
+    "pages/wuliu/index",
+    "pages/coaches/coaches",
+    "pages/articles-detail/index",
+    "pages/video/video",
+    "pages/appointment/appointment",
+    "pages/coaches-detail/coaches-detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "WeChat",
+    "backgroundColor": "#000000",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#CCCCCC",
+    "selectedColor": "#e64340",
+    "borderStyle": "black",
+    "backgroundColor": "#000",
+    "box-shadow": "0 0 6px 0",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "images/nav/icon-home.png",
+        "selectedIconPath": "images/nav/icon-home-sel.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/Appointment1/Appointment1",
+        "iconPath": "images/nav/icon-date.png",
+        "selectedIconPath": "images/nav/icon-date-sel.png",
+        "text": "预约"
+      },
+      {
+        "pagePath": "pages/clock/clock",
+        "iconPath": "images/nav/icon-food.png",
+        "selectedIconPath": "images/nav/icon-food-sel.png",
+        "text": "饮食记录"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "images/nav/icon-mine.png",
+        "selectedIconPath": "images/nav/icon-mine-sel.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+<!--home.wxml-->
+<view class="container">
+   <view class="swiper-container">
+        <swiper class="swiper_box" 
+                    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperchange">
+            <block wx:for="{{banners}}">
+                <swiper-item>
+                    <image data-id="{{item.businessId}}" src="{{item.picUrl}}" class="slide-image" width="750rpx" height="562.5rpx"/>
+                </swiper-item>
+            </block>
+        </swiper>
+        <view class="dots">  
+            <block wx:for="{{banners}}" wx:key="unique">  
+                <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>  
+            </block>  
+        </view>  
+   </view>
+
+<view class="zan-panel">
+    <view class="zan-cell">
+        <view class="zan-cell__bd">关于我们</view>
+        <view class="zan-cell__ft">
+          <view class="img-box" bindtap="showmap">详细地址
+            <image src="../../images/ico-addr-red.png" class="img" />
+          </view>
+        </view>
+    </view>
+    <view class="zan-font-10">十年磨一剑，一直以来我们致力于做最贴心、最专业的健身房，您的满意是我们的福祉。。</view>
+    <view class="zan-font-10">李大力健身房携手健康与健美欢迎您的到来。</view>
+</view>
+<view class="zan-panel">
+    <view class="zan-cell zan-cell--access">
+        <view class="zan-cell__bd">我们的环境</view>
+        <view class="zan-cell__ft">
+            <view class="img-box" bindtap="showvideo">实景视频展示
+                <image src="../../images/video.png" class="imgvideo" />
+            </view>
+        </view>
+    </view>
+    <view class="envimg" wx:for="{{envpic}}">
+        <image src="{{item.picUrl}}"></image>
+    </view>
+</view>
+  <view class="zan-panel">
+    <view class="zan-cell zan-cell--access">
+      <view class="zan-cell__bd">我们的教练</view>
+      <view class="zan-cell__ft" bindtap="toAllCoachesTap">查看全部教练</view>
+    </view>
+   <view class="swiper-container">
+        <swiper class="swiper_box" bindchange="coachswiperchange">
+            <block wx:for="{{coaches}}">
+                <swiper-item>
+                  <view class="coach">
+                    <image class="swiper-item-coach" data-id="{{item.id}}" src="{{item.pic}}"/>
+                    <view class="zan-font-12-bold">{{item.title}}</view>
+                  </view>
+                  <text class="zan-font-10">{{item.descript}}</text>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+  </view>
+  <view class="zan-panel articles">
+    <view class="zan-cell zan-cell--access">
+      <view class="zan-cell__bd">我们推荐的文章</view>
+      <view class="zan-cell__ft" bindtap="toAllArticlesTap">查看更多</view>
+    </view>
+        <block wx:for="{{ articles }}">
+            <navigator url="/pages/articles-detail/index?id={{item.id}}">
+            <view class="article__item">
+                <view class="article__thumb">
+                    <image class="article__image" src="{{ item.pic }}"></image>
+                </view>
+                <view class="article__info">
+                    <view class="article__title article__title__large" background-image="url({{item.pic}})">{{ item.title }}</view>
+                    <view class="article__desc">
+                        <text wx:if="{{ item.tags }}" class="article__source">{{ item.tags }}</text>
+                        <text class="article__time">{{ item.dateAdd }}</text>
+                        <view class="article__count">
+                            <image class="article__icon" src="../../images/eye.png"></image>
+                            <text>{{ item.views }}</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            </navigator>
+        </block>
+    </view>
+</view>
+<view class="footaboutme"><text>技术支持：智汇番茄科技工作室\r\nWechat：18629027590</text></view>

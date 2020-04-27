@@ -1,0 +1,24 @@
+<!--pages/Appointment1/Appointment1.wxml-->
+<view class="container">
+  <image src="../../images/bannar2.jpg"></image>
+   <view class="type-container">
+        <scroll-view class="type-navbar" scroll-x="true" style="width: 100%">
+            <view class="type-box {{item.flag ? 'active' :''}}" data-index="{{index}}" wx:for-items="{{categories}}" wx:key="index" bindtap="tabClick" data-item="{{item}}">
+                <view class="type-navbar-item">
+                    <text>{{item.date}}</text>
+                    <text>{{item.week}}</text>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+    <view class="content">
+    <block wx:if="{{list.length > 0}}">
+      <view class="flex-li"wx:for-items="{{list}}" wx:key="index">
+        <text class="flex-time">{{item.time}}</text>
+        <text class="flex-number">已预约人数：{{item.number}}</text>
+        <text class="apt" bindtap='Appointment' data-item="{{item}}">预约</text>
+      </view>
+    </block>
+    <view wx:else><view class='texttip'>今日没有更多时段了，请看看明天的预约吧^_^</view></view>
+    </view>
+</view>

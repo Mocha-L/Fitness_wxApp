@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/goods-details/index",
+    "pages/shop-cart/index",
+    "pages/to-pay-order/index",
+    "pages/select-address/index",
+    "pages/address-add/index",
+    "pages/order-list/index",
+    "pages/order-details/index",
+    "pages/wuliu/index",
+    "pages/coaches/coaches",
+    "pages/mine/mine",
+    "pages/articles-detail/index",
+    "pages/video/video",
+    "pages/signin/sign-in",
+    "pages/appointment/appointment",
+    "pages/coaches-detail/coaches-detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "WeChat",
+    "backgroundColor": "#000000",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#cccccc",
+    "selectedColor": "#e64340",
+    "borderStyle": "black",
+    "backgroundColor": "#000",
+    "box-shadow": "0 0 6px 0",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "images/nav/home-off.png",
+        "selectedIconPath": "images/nav/home-on.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/appointment/appointment",
+        "iconPath": "images/nav/time-off.png",
+        "selectedIconPath": "images/nav/time-on.png",
+        "text": "预约"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/nav/icon-list.png",
+        "selectedIconPath": "images/nav/icon-list-sel.png",
+        "text": "课程"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "images/nav/icon-weightlift.png",
+        "selectedIconPath": "images/nav/icon-weightlift-sel.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

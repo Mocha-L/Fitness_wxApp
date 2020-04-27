@@ -1,0 +1,11 @@
+<!--coaches.wxml-->
+  <view class="zan-toptips {{ zanTopTips.show ? 'zan-toptips--show' : '' }}">{{ zanTopTips.content }}</view>
+<view class="container">
+  <view class="coach-card" wx:for="{{coaches}}" data-telnumber="{{item.tags}}" bindlongtap="ContactCoachLongTap">
+      <view class="coach">
+          <image class="item-coach" src="{{item.pic}}"/>
+          <view class="zan-font-12-bold">{{item.title}}</view>
+      </view>
+      <text class="zan-font-10">{{item.descript}}</text>
+  </view>
+</view>

@@ -1,0 +1,172 @@
+/* mine.wxss */
+.userinfo {
+	display: flex;
+  width: 100%;
+  height:400rpx;
+	flex-direction: column;
+	/* padding: 50rpx 0; */
+	align-items: center;
+	background: #000000;
+}
+.userinfo text{
+  color:#fff;
+}
+
+.userinfo-avatar {
+	width: 128rpx;
+	height: 128rpx;
+	margin: 50rpx 0rpx 20rpx 0rpx;
+	border-radius: 50%;
+  overflow: hidden;
+}
+
+.userinfo-nickname {
+	color: #fff;
+  font-size: 15px;
+}
+
+.zan-cell {
+  position: relative;
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+  font-size: 13px;
+}
+
+.zan-cell::after {
+  position: absolute;
+  left: 15px;
+  right: 0;
+  bottom: 0;
+  border-top: 1rpx solid #e5e5e5;
+  background: #e5e5e5;
+  content: ' ';
+}
+.zan-cell__bd {
+  flex: 1;
+}
+.zan-cell__ft {
+  position: relative;
+  text-align: right;
+  color: #666;
+}
+
+.zan-cell--last-child::after,
+.zan-cell:last-child::after {
+  display: none;
+}
+
+.zan-cell--access .zan-cell__ft {
+  padding-right: 13px;
+}
+
+.zan-cell--access .zan-cell__ft::after {
+  position: absolute;
+  top: 50%;
+  right: 2px;
+  content: " ";
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+  border-width: 2px 2px 0 0;
+  border-color: #c8c8c8;
+  border-style: solid;
+  transform: translateY(-50%) matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+}
+.zan-cell--switch {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.zan-panel {
+  border-top: 30rpx solid #e5e5e5;
+  border-bottom: 0rpx solid #e5e5e5;
+  overflow: hidden;
+  width: 100%;
+}
+
+.img{
+    width: 30rpx;
+    height:30rpx;
+    margin-right:10px;
+}
+
+.show-popup{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  z-index: 4;
+}
+.popup-mask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+.popup-contents{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width:100%;
+  background-color: #fff;
+  z-index: 6;
+}
+
+.zan-form__input, .zan-form__item{
+  min-height: 36px;
+  padding-left:20px;
+}
+
+.zan-btn {
+  position: relative;
+  color: #333;
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 2px;
+  border: 1rpx solid #e5e5e5;
+  font-size: 16px;
+  line-height: 45px;
+  height: 45px;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+}
+.zan-btn::after {
+  display: none;
+}
+
+.zan-btn--submit {
+  color: #fff;
+  background-color: #4b0;
+  border-color: #0a0;
+}
+
+.zan-btn--reset {
+  color: #fff;
+  background-color: #AAA;
+  border-color: #888;
+}
+
+.zan-btn--small {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.footaboutme {
+  background-color: #fff;
+  text-align: center;
+  color: #e5e5e5;
+  font-size: 10px;
+}

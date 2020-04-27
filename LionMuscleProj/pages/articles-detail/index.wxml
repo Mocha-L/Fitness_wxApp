@@ -1,0 +1,25 @@
+<!--index.wxml-->
+<import src="../../wxParse/wxParse.wxml" />
+<view class="container">
+<view class="art-header">
+    <image src="{{article.pic}}" class="art-img" />
+    <view class="art-title">{{article.title}}</view>
+    <view class="article__desc">
+      <text class="article__source" wx:if="{{ article.tags }}">{{ article.tags }}</text>
+      <text class="article__time">{{ article.dateAdd }}</text>
+      <view class="article__count">
+          <!--<image class="article__icon" src="/image/icon-comt.png"></image>
+          <text>{{ article.comment }}</text>-->
+          <image class="article__icon" src="../../images/eye.png"></image>
+          <text>{{ article.views }}</text>
+      </view>
+    </view>
+</view>
+    <!--<view class="article__content">-->
+        <view class="article-text">
+        <view class="article__content wxParse">
+            <template is="wxParse" data="{{wxParseData:FitnessArticle.nodes}}"/>
+        </view>
+        </view>
+    <!--</view>-->
+</view>

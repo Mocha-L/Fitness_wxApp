@@ -1,0 +1,20 @@
+<view class='weui-cell-third'>
+  <view class="page__title">
+  <!-- <image src="../../images/docard.png"></image> -->
+  <!-- <text style="font-size:36rpx;">   </text> -->
+  <text style='margin-top:30rpx'>控制摄入、合理膳食</text>
+    <!-- <image class='page-image' src="/static/img/1.png" />工作动态 -->
+  </view>
+  <block wx:for="{{axis}}" wx:key="*this">
+    <view class='weui-cell-list'>
+    <radio value="{{index}}" checked='{{item.check}}' disabled="true"></radio>
+      <!-- <view class='weui-cell-circle {{item.check ? "active" : ""}}' bindtap='checkpoint' data-index="{{index}}" data-item="{{item}}"></view> -->
+      <view class='weui-cell-line {{item.flag ? "item":""}}'>
+        <image src="{{item.ImgUrl}}" bindtap='checkpoint' data-index="{{index}}" data-item="{{item}}"></image>
+      </view>
+ 
+    </view>
+ 
+  </block>
+  <view class="footer" bindtap="toSign">今天去记录一下吧</view>
+</view>

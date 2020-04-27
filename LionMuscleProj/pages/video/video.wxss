@@ -1,0 +1,28 @@
+/* video.wxss */
+.container {
+  min-height: 100%;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.page__hd{
+    padding:20px 30px 20px 30px;
+    border:1rpx solid #000;
+    margin:30px 10px 20px 10px;
+}
+.page__title{
+    display: block;
+    font-size: 14px;
+    margin-bottom:10px;
+}
+.page__desc{
+    margin-top: 5px;
+    font-size: 12px;
+    color: #888888;
+}
+.section{
+    margin-bottom: 40px;
+}
+.tc{
+    text-align: center;
+}

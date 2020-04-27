@@ -1,0 +1,10 @@
+<!--video.wxml-->
+<view class="container">
+    <view class="page__hd">
+        <text class="page__title">我们的锻炼环境</text>
+        <text class="page__desc">我们的视频取自健身房实拍，专业的健身器材、宽敞明亮的空间以及专业的教练员还不能让你心动的话……\r\n那众多美女学员呢？快来欣赏吧~</text>
+    </view>
+        <view class="section tc">
+            <video src="http://dl84.80s.im:920/1612/[WWW.迷糊餐厅]第13集/[WWW.迷糊餐厅]第13集_hd.mp4" binderror="videoErrorCallback" bindplay="playvideo"></video>
+        </view>
+</view>

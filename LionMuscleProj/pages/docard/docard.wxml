@@ -1,0 +1,27 @@
+<view class="container">
+ <view class="swiper-container">
+        <swiper class="swiper_box" 
+                    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperchange">
+            <block wx:for="{{banners}}">
+                <swiper-item>
+                    <image data-id="{{item.businessId}}" src="{{item.picUrl}}" class="slide-image" width="750rpx" height="562.5rpx"/>
+                </swiper-item>
+            </block>
+        </swiper>
+        <view class="dots">  
+            <block wx:for="{{banners}}" wx:key="unique">  
+                <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>  
+            </block>  
+        </view>  
+   </view>
+      <view class="zan-panel" bindtap='toClock'>
+    <view class="zan-cell zan-cell--access">
+      <view class="zan-cell__bd">饮食打卡</view>
+      <view class="zan-cell__ft" bindtap='toClock'>查看打卡</view>
+    </view>
+    <view class="zan-font-10">合理的健康饮食习惯会让您在健身的路上事半功倍，所以快来饮食打卡吧，我们会提供给你合理的建议,并给你一个健康的饮食。</view>
+    <view class="zan-font-10">
+      <image src="../../images/barnar.jpg"></image>
+    </view>
+</view>
+</view>

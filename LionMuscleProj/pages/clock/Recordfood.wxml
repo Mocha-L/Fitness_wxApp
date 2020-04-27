@@ -1,0 +1,16 @@
+<!--pages/clock/Recordfood.wxml-->
+<view class="container">
+  <view class="header">
+    <textarea placeholder='请输入你的清单列表' maxlength="200" bindinput="remankInput"></textarea>
+  </view>
+  <view class="list">
+      <view class="educt_hasupload_pic" wx:for="{{evalList[0].tempFilePaths}}"  wx:key="index">
+          <image src="{{item.pic}}" class="upload"></image>
+          <image src="../../images/deltel.png" bindtap='clearImg' data-index="{{index}}" class="deltel"></image>
+      </view>
+      <view class="educt_upload_add" bindtap="joinPicture" data-index="{{0}}">
+          <image src="../../images/add.png"></image>
+      </view>
+  </view>
+  <view class="submit" bindtap='submit'>提交记录</view>
+</view>

@@ -1,0 +1,17 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+<image src="../../images/login_bg.jpg" class="bg"></image>
+  <view class="master">
+    
+  </view>
+  <view class="content">
+     <view class="usermotto">
+        <view class="avatar">
+            <image class="userinfo-avatar" src="../../images/login.png" background-size="cover"></image>
+        </view>
+        <input type="text" bindinput="userNameInput" placeholder='请输入您的会员名' placeholder-class="phcolor"/>
+        <input type="text" bindinput="userPasswordInput" password="true" placeholder='请输入你的会员手机号码' placeholder-class="phcolor"/>
+        <button bindtap="logIn">登录</button>
+      </view>
+  </view>
+</view>

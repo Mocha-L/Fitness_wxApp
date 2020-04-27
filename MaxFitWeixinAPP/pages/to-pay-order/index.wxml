@@ -1,0 +1,64 @@
+<view class="container">
+     <form bindsubmit="createOrder">
+     <view class="address-box" wx:if="{{isNeedLogistics > 0}}">
+        <view class="add-address" hidden="{{curAddressData}}">
+            <view class="title" bindtap="addAddress">新增收货地址</view>
+        </view>
+        <view class="show-address" hidden="{{!curAddressData}}" bindtap="selectAddress">
+            <view class="name-tel">{{curAddressData.linkMan}}  {{curAddressData.mobile}}</view>
+            <view class="addr-text">{{curAddressData.address}}</view>
+        </view>
+     </view>
+     <view class="goods-list">
+        <view class="list-title">{{mallName}}</view>
+        <view class="a-goods" wx:for-items="{{goodsList}}" wx:key="{{index}}">
+            <view class="img-box">
+                <image src="{{item.pic}}" class="img" />
+            </view>
+            <view class="text-box">
+                <view class="arow arow01">
+                    <view class="goods-name">{{item.name}}</view>
+                    <view class="goods-price">¥ {{item.price}}</view>
+                </view>
+                <view class="arow">
+                    <view class="goods-label">{{item.label}}</view>
+                    <view class="goods-num">x {{item.number}}</view>
+                </view>
+            </view>
+        </view>
+     </view>
+     <view class="peisong-way">
+        <view class="row-box" wx:if="{{isNeedLogistics > 0}}">
+            <view class="row-label">配送方式</view>
+            <view class="right-text" wx:if="{{yunPrice > 0}}">顺丰快递</view>
+            <view class="right-text" wx:if="{{yunPrice == 0}}">快递包邮</view>
+        </view>
+        <view class="row-box">
+            <view class="row-label">备注</view>
+            <view class="right-text">
+                <input name="remark" type="text" class="liuyan" placeholder="如需备注请输入" />
+            </view>
+        </view>
+     </view>
+     <view class="goods-info">
+        <view class="row-box" wx:if="{{isNeedLogistics > 0 && yunPrice > 0}}">
+            <view class="row-label">商品金额</view>
+            <view class="right-text">¥ {{allGoodsPrice}}</view>
+        </view>
+        <view class="row-box" wx:if="{{isNeedLogistics > 0 && yunPrice > 0}}">
+            <view class="row-label">运费</view>
+            <view class="right-text">+ ¥ {{yunPrice}}</view>
+        </view>
+        <view class="row-box">
+            <view class="row-label">应付总额</view>
+            <view class="right-text">¥ {{allGoodsPrice+yunPrice}}</view>
+        </view>
+     </view>
+     <view class="jiesuan-box">
+        <view class="left-price">
+            <view class="total">合计：¥ {{allGoodsPrice+yunPrice}}</view>
+        </view>
+        <button class="to-pay-btn" formType="submit">提交订单</button>
+    </view>
+    </form>
+</view>

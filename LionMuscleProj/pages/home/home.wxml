@@ -1,0 +1,162 @@
+<!--home.wxml-->
+<view class="container" style="background-image:url('https://cdn.it120.cc/apifactory/2018/11/02/5a346c7f500ea8462569f2eaae8d19a3.jpg');background-size: 100% 100%;">
+   <!-- <view class="swiper-container">
+        <swiper class="swiper_box" 
+                    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperchange">
+            <block wx:for="{{banners}}">
+                <swiper-item>
+                    <image data-id="{{item.businessId}}" src="{{item.picUrl}}" class="slide-image" width="750rpx" height="562.5rpx"/>
+                </swiper-item>
+            </block>
+        </swiper>
+        <view class="dots">  
+            <block wx:for="{{banners}}" wx:key="unique">  
+                <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>  
+            </block>  
+        </view>  
+   </view> -->
+
+<image mode='widthFix' src="../../images/banner.png" class="img" />
+<view class="zan-panel">
+    <view class="zan-cell">
+        <view style='width:20px' class='img-box'>
+        <image src="../../images/down.png" class="img" /></view>
+        <view style='width:70%'>
+        <view class="zan-cell__bd">欢迎来到我们的健身房</view>
+        <view class="zan-cell__bot">Welcome to our gym</view>
+        </view>
+        <view class="zan-cell__ft" style='color:#fff' bindtap='showmap'>
+            <view class="img-box">点击查看地址
+                <image src="../../images/ico-addr.png" style='width:25rpx;height:25rpx'/>
+            </view>
+        </view>
+    </view>
+     <view class="tc">
+        <video style='width:95%; height:400rpx' src="http://wxapi.honglingjin.online:8080/videos/propaganda.mp4" binderror="videoErrorCallback" bindplay="playvideo"></video>
+        </view>
+    <!-- <view class="zan-font-10">一直以来我们致力于做最贴心、最专业的健身房，您的满意是我们的福祉。</view>
+    <view class="zan-font-10">狮子会健身俱乐部携手健康与健美欢迎您的到来。</view>
+    <view class="zan-font-10">地址：广州市海珠区工业大道南 南松荟301</view>
+    <view class="zan-font-10">联系电话：<view class="font-blue-link" bindtap="phonecall">17817282605</view></view> -->
+</view>
+
+<view class="zan-panel">
+    <view class="zan-cell">
+        <view style='width:20px' class='img-box'>
+        <image src="../../images/down.png" class="img" /></view>
+        <view style='width:80%'>
+        <view class="zan-cell__bd">关于我们</view>
+        <view class="zan-cell__bot">About us</view>
+        </view>
+    </view>
+    <view style='margin: 20px 0; height:240rpx'>
+      <view style='width:33%; float:left;' bindtap='phonecall'>
+        <view style='text-align:center;'><image class="img-avatar" src="../../images/logo_small.png" /></view>
+        <view class="zan-cell__bd" style='font-size:12px; text-align:center; margin-top:10px'>联系我们</view>
+        <view class="zan-cell__bot" style='font-size:9px; text-align:center'>Contact us</view>
+      </view>
+      <view style='width:34%; float:left;' bindtap='toAllCoachesTap'>
+      <view style='text-align:center;'><image class="img-avatar" src="../../images/coach.png" /></view>
+        <view class="zan-cell__bd" style='font-size:12px; text-align:center; margin-top:10px'>教练信息</view>
+        <view class="zan-cell__bot" style='font-size:9px; text-align:center'>The coach information</view>
+      </view>
+      <view style='width:33%; float:left;'>
+      <view style='text-align:center;'><image class="img-avatar" src="../../images/env.png" /></view>
+        <view class="zan-cell__bd" style='font-size:12px; text-align:center; margin-top:10px'>健身环境</view>
+        <view class="zan-cell__bot" style='font-size:9px; text-align:center'>Fitness environment</view>
+      </view>
+    </view>
+</view>
+
+<view class="zan-panel">
+    <view class="zan-cell">
+        <view style='width:20px' class='img-box'>
+        <image src="../../images/down.png" class="img" /></view>
+        <view style='width:80%'>
+          <view class="zan-cell__bd">限时特惠</view>
+          <view class="zan-cell__bot">Limited-time offers</view>
+        </view>
+    </view>
+</view>
+      <view style='width:80%;margin:40rpx 0;'>
+      <view style='text-align:center;'><image class="img-banner" src="../../images/active1.png" /></view>
+        <view class="zan-cell__bd" style='font-size:12px; text-align:center; margin-top:10px'>点击了解详情</view>
+        <view class="zan-cell__bot" style='font-size:9px; text-align:center'>Click for details</view>
+      </view>
+            <view style='width:80%;margin:40rpx 0;'>
+      <view style='text-align:center;'><image class="img-banner" src="../../images/active2.png" /></view>
+        <view class="zan-cell__bd" style='font-size:12px; text-align:center; margin-top:10px'>点击了解详情</view>
+        <view class="zan-cell__bot" style='font-size:9px; text-align:center'>Click for details</view>
+      </view>
+            <view style='width:80%;margin:40rpx 0;'>
+      <view style='text-align:center;'><image class="img-banner" src="../../images/active3.png" /></view>
+        <view class="zan-cell__bd" style='font-size:12px; text-align:center; margin-top:10px'>点击了解详情</view>
+        <view class="zan-cell__bot" style='font-size:9px; text-align:center'>Click for details</view>
+      </view>
+
+<!-- <view class="zan-panel">
+    <view class="zan-cell zan-cell--access">
+        <view class="zan-cell__bd">我们的环境</view>
+        <view class="zan-cell__ft">
+            <view class="img-box">实景视频展示
+                <image src="../../images/video.png" class="imgvideo" />
+            </view>
+        </view>
+    </view>
+    <view class="envimg" wx:for="{{envpic}}">
+        <image src="{{item.picUrl}}"></image>
+    </view>
+</view>
+  <view class="zan-panel">
+    <view class="zan-cell zan-cell--access">
+      <view class="zan-cell__bd">我们的教练</view>
+      <view class="zan-cell__ft" bindtap="toAllCoachesTap">查看全部教练</view>
+    </view>
+   <view class="swiper-container">
+        <swiper class="swiper_box" bindchange="coachswiperchange">
+            <block wx:for="{{coaches}}">
+                <swiper-item>
+                  <view class="coach">
+                    <image class="swiper-item-coach" data-id="{{item.id}}" src="{{item.pic}}"/>
+                    <view class="zan-font-12-bold">{{item.title}}</view>
+                  </view>
+                  <text class="zan-font-10">{{item.descript}}</text>
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+  </view> -->
+  <view class="zan-panel">
+    <view class="zan-cell">
+        <view style='width:20px' class='img-box'>
+        <image src="../../images/down.png" class="img" /></view>
+        <view style='width:80%'>
+        <view class="zan-cell__bd">健身小知识</view>
+        <view class="zan-cell__bot">Fitness tidbits</view>
+        </view>
+    </view>
+</view>
+  <view class="zan-panel" style='width:95%'>
+        <block wx:for="{{ articles }}">
+            <navigator url="/pages/articles-detail/index?id={{item.id}}">
+            <view class="article__item">
+                <view class="article__thumb">
+                    <image class="article__image" src="{{ item.pic }}"></image>
+                </view>
+                <view class="article__info">
+                    <view class="article__title article__title__large" background-image="url({{item.pic}})">{{ item.title }}</view>
+                    <view class="article__desc">
+                        <text wx:if="{{ item.tags }}" class="article__source">{{ item.tags }}</text>
+                        <text class="article__time">{{ item.dateAdd }}</text>
+                        <view class="article__count">
+                            <image class="article__icon" src="../../images/eye.png"></image>
+                            <text>{{ item.views }}</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            </navigator>
+        </block>
+    </view>
+</view>
+<!-- <view class="footaboutme"><text>技术支持：智汇番茄科技工作室\r\nWechat：18629027590</text></view> -->

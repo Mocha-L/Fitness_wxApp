@@ -1,0 +1,172 @@
+/* coaches-detail.wxss */
+.container {
+  min-height: 100%;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.row-wrap{
+    width: 100%;
+    line-height: 88rpx;
+    margin-left: 30rpx;
+    border-bottom: 1rpx solid #eee;
+    display: flex; 
+    font-size: 28rpx;
+    /*justify-content: space-between;*/
+}
+.row-wrap .label{
+    color: #000
+}
+.row-wrap .label-right{
+    flex: 1;
+    height: 88rpx;
+    line-height: 88rpx;
+}
+.row-wrap .label-right input{
+    height: 100%;
+    font-size: 28rpx;
+    padding-right: 30rpx;
+}
+.row-wrap .right-box{
+    margin-right: 30rpx; 
+}
+
+.picker {
+    width:160rpx;
+    height: 60rpx;
+    background-color: #000;
+    font-size: 15px;
+    border-radius: 30rpx;
+    text-align: center;
+    color: #fff;
+    margin:15rpx 15rpx;
+    line-height:60rpx;
+}
+
+.hui{
+    color: #ccc;
+}
+
+.item-coach {
+  width:200rpx;
+  display: inline-block;
+  overflow: hidden;
+  height:200rpx;
+  border-radius: 50%;
+  justify-content: center;
+}
+
+.zan-font-12-bold {
+  position: relative;
+  padding: 6px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight:bold;
+  flex-direction: row;
+  text-align: center;
+  margin:0 10%;
+}
+
+.zan-font-10 {
+  position: relative;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+}
+.coach-dest{
+  background-color: #000;
+  color: #fff;
+  width:100%;
+}
+
+.coach{
+  align-items: center;
+  margin: 10px 0px;
+  padding: 0 35% 0 35%;
+}
+
+.type-container{
+  width: 100%;
+  height: 88rpx;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.type-navbar{
+  white-space: nowrap;
+  display: flex;
+  height: 88rpx;
+  background-color: #fff;
+}
+
+.type-box{
+  width:160rpx;
+  box-sizing: content-box;
+  font-size: 24rpx;
+  line-height: 84rpx;
+  text-align: center;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.type-navbar-item{
+  border-bottom: 4rpx solid #fff;
+}
+.type-item-on{
+  border-bottom: 4rpx solid #e64340;
+}
+
+.zan-cell {
+  position: relative;
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  line-height: 1.4;
+  font-size: 10px;
+}
+
+.zan-cell::after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-top: 1rpx solid #e5e5e5;
+  background: #e5e5e5;
+  content: ' ';
+}
+.zan-cell__bd {
+  flex: 1;
+  color: #e64340;
+}
+
+.zan-panel {
+  background: #fff;
+  /*border-top: 1rpx solid #e5e5e5;*/
+  border-bottom: 1rpx solid #e5e5e5;
+  overflow: hidden;
+  width:100%;
+  border-radius:10rpx;
+}
+
+.appointBtn{
+    width: 200rpx;
+    height: 200rpx;
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top:30rpx;
+    line-height:200rpx;
+    text-align: center;
+}
+.border-radius {
+    border-radius: 50%;
+    position: relative;
+    left: 0;
+    top: 0;
+    color: #fff;
+}
+.pink-bg {
+    background-color: #000;
+}

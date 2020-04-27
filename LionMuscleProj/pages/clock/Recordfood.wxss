@@ -1,0 +1,69 @@
+/* pages/clock/Recordfood.wxss */
+.container{
+  font-size:28rpx;
+}
+.header{
+  width:90%;
+  margin:40rpx 5%;
+  float:left;
+  /* border:1px solid red; */
+}
+textarea{
+  width:94%;
+  float:left;
+  border-radius:10rpx;
+  height:200rpx;
+  border:1px solid #e1e1e1;
+  padding:3%;
+}
+.list{
+  width:90%;
+  margin:0 5%;
+  float:left;
+  height:200rpx;
+}
+.list image{
+  width:120rpx;
+  height:120rpx;
+  float:left;
+  position:relative;
+  z-index:99;
+}
+.educt_hasupload_pic{
+  position: relative;
+  width:120rpx;
+  height:120rpx;
+  /* margin:0 20rpx 0 0; */
+  padding:20rpx;
+  float:left;
+  border:1px dotted #e1e1e1;
+}
+
+.educt_hasupload_pic .deltel{
+  width:30rpx;
+  height:30rpx;
+  position: absolute;
+  top:0;
+  z-index:999999;
+  right:0;
+}
+
+.educt_upload_add{
+  width:120rpx;
+  height:120rpx;
+  float:left;
+  border:1px dotted #e1e1e1;
+  padding:20rpx;
+}
+
+.submit{
+  width:90%;
+  line-height:100rpx;
+  font-size:30rpx;
+  float:left;
+  border-radius:10rpx;
+  text-align: center;
+  color:#fff;
+  background: red;
+  margin:40rpx 5%;
+}

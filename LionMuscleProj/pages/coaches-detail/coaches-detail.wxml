@@ -1,0 +1,46 @@
+<!--coaches-detail.wxml-->
+<view class="container">
+    <view class="coach-dest">
+        <view class="coach">
+            <image class="item-coach" data-id="{{coach.id}}" src="{{coach.pic}}"/>
+            <view class="zan-font-12-bold">{{coach.title}}</view>
+        </view>
+        <text class="zan-font-10">{{coach.descript}}</text>
+    </view>
+    <view class="zan-panel">
+        <view class="zan-cell">
+            <view class="zan-cell__bd">选择预约时间</view>
+        </view>
+        <view class="type-container">
+            <scroll-view class="type-navbar" scroll-x="true" style="width: 100%">
+                <view class="type-box" wx:for-items="{{date}}">
+                    <view id="{{item.id}}" class="type-navbar-item {{activedateid == item.id ? 'type-item-on' : ''}}" bindtap="tabClick">
+                        {{item.datestr}}
+                    </view>
+                </view>
+            </scroll-view>
+        </view>
+        <view class="row-wrap">
+            开始时间：
+            <picker bindchange="bindPickerstartTimeChange" range="{{startTime}}">
+              <view class="picker {{selstartTime=='请选择'?'hui':''}}">
+                {{selstartTime}}
+              </view>
+            </picker>
+        </view>
+        <view class="row-wrap"> 
+            结束时间：
+            <picker bindchange="bindPickerendTimeChange" bindtap="PickerendTimeTap" range="{{endTime}}">
+              <view class="picker {{selendTime=='请选择'?'hui':''}}">
+                {{selendTime}}
+              </view>
+            </picker>
+        </view>
+    </view>
+    <view class="appointBtn border-radius pink-bg" bindtap="appointtap">立即预约</view>
+</view>
+<modal title="预定确认" hidden="{{modalHidden}}"  bindconfirm="modalHide" bindcancel="modalHideCancle">
+    <view class="zan-font-15">
+        <text>{{modalContent}}</text>
+    </view>
+</modal>

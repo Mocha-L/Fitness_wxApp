@@ -1,0 +1,247 @@
+/* home.wxss */
+.container {
+  background-color: #F2f2f2;
+  min-height: 100%;
+  justify-content:space-between;
+  align-items: center;
+}
+.swiper-container{
+  width: 750rpx;
+  position: relative;  
+}
+.swiper_box {
+  width: 100%;
+  height:562.5rpx;
+}
+
+swiper-item image {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.swiper-item-coach {
+  width:200rpx;
+  display: inline-block;
+  overflow: hidden;
+  height:200rpx;
+  border-radius: 50%;
+  justify-content: center;
+}
+
+.swiper-container .dots{  
+  position: absolute;  
+  left: 0;  
+  right: 0;  
+  bottom: 20rpx;  
+  display: flex;  
+  justify-content: center;  
+}  
+.swiper-container .dots .dot{  
+  margin: 0 8rpx;  
+  width: 14rpx;  
+  height: 14rpx;  
+  background: #fff;  
+  border-radius: 50%;
+  transition: all .6s;  
+  opacity: .5;
+}  
+.swiper-container .dots .dot.active{  
+  width: 14rpx;  
+  opacity: 1;
+}
+
+.container .list-title{
+    font-size: 28rpx;
+    color: #000;
+    padding: 30rpx 0 25rpx 30rpx;
+}
+
+.zan-cell {
+  position: relative;
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  line-height: 1.4;
+  font-size: 10px;
+}
+
+.zan-cell::after {
+  position: absolute;
+  left: 15px;
+  right: 0;
+  bottom: 0;
+  border-top: 1rpx solid #e5e5e5;
+  background: #e5e5e5;
+  content: ' ';
+}
+.zan-cell__bd {
+  flex: 1;
+  color: #e64340;
+}
+.zan-cell__ft {
+  position: relative;
+  text-align: right;
+  color: #666;
+}
+
+.zan-panel {
+  background: #fff;
+  /*border-top: 1rpx solid #e5e5e5;*/
+  border-bottom: 1rpx solid #e5e5e5;
+  overflow: hidden;
+  margin-bottom:10px;
+  width:100%;
+  border-radius:10rpx;
+}
+
+.zan-font-10 {
+  position: relative;
+  padding: 6px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+}
+
+.zan-font-12-bold {
+  position: relative;
+  padding: 6px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight:bold;
+  flex-direction: row;
+  text-align: center;
+  margin:0 10%;
+}
+
+.img-box{
+    overflow: hidden;
+}
+
+.img-box .img{
+    width: 30rpx;
+    height:30rpx;
+}
+.img-box .imgvideo{
+    width: 30rpx;
+    height:20rpx;
+}
+.coach{
+  align-items: center;
+  margin: 10px 0px;
+  background: #fff;
+  padding: 0 35% 0 35%;
+}
+
+.zan-cell--access .zan-cell__ft {
+  padding-right: 13px;
+}
+
+.zan-cell--access .zan-cell__ft::after {
+  position: absolute;
+  top: 50%;
+  right: 2px;
+  content: " ";
+  display: inline-block;
+  height: 6px;
+  width: 6px;
+  border-width: 2px 2px 0 0;
+  border-color: #c8c8c8;
+  border-style: solid;
+  transform: translateY(-50%) matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+}
+
+.envimg{
+  width: 100%;
+  height: 180px;
+  padding-bottom: 7px;
+}
+
+.envimg image{
+  width: 100%;
+  height: 100%;
+  display:inline-block;
+  overflow:hidden;
+}
+
+/*文章相关*/
+.articles{
+  background-color: #fff;
+}
+.article__item{
+  display: flex;
+  padding: 30rpx;
+  align-items: center;
+  border-bottom: 1rpx solid #eee;
+  position: relative;
+  padding-bottom: 40rpx;
+}
+.article__thumb{
+  width:4.2rem;
+  height: 3rem;
+  margin-right: 0.6rem;
+}
+.article__image{
+  width:4.2rem;
+  height: 3rem;
+}
+.article__info{
+  flex: 1;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom:5px;
+  padding-top:5px;
+}
+.article__title{
+  font-weight: 400;
+  font-size: 26rpx;
+  text-overflow: ellipsis;
+  display: block;
+  width: 100%;
+  margin-bottom: 20rpx;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.article__desc{
+  color: #999;
+  font-size: 24rpx;
+  line-height: 1.2;
+  width: 100%;
+}
+.article__source{
+  color:#d81e06;
+  border:1rpx solid #d81e06;
+  padding: 2rpx 10rpx;
+  border-radius: 4rpx;
+  font-size:20rpx;
+  margin-right: 20rpx;
+}
+
+
+.article__time{
+  margin-right: 10rpx;
+}
+.article__count{
+  float: right;
+  display: flex;
+  align-items: center;
+  color:#333;
+  font-size: 20rpx;
+  font-weight: 500;
+}
+
+.article__icon{
+  width: 33rpx;
+  height: 20rpx;
+  margin-left: 15rpx;
+  margin-right: 6rpx;
+}
+
+.footaboutme {
+  background-color: #F2f2f2;
+  text-align: center;
+  color: #ccc;
+  font-size: 10px;
+}

@@ -1,0 +1,86 @@
+<import src="../../wxParse/wxParse.wxml" />
+<view class="container"> 
+   <view class="swiper-container">
+        <swiper class="swiper_box" 
+                    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperchange">
+            <block wx:for="{{goodsDetail.pics}}">
+                <swiper-item>
+                    <image src="{{item.pic}}" class="slide-image" width="355" height="150"/>
+                </swiper-item>
+            </block>
+        </swiper>
+        <view class="dots">  
+            <block wx:for="{{goodsDetail.pics}}" wx:key="unique">  
+                <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>  
+            </block>  
+        </view>  
+   </view>
+   <view class="goods-info">
+        <view class="goods-title">{{goodsDetail.basicInfo.name}}</view>
+        <view class="zan-font-10">
+          <text>{{goodsDetail.basicInfo.characteristic}}</text>
+        </view>
+        <!--<view class="goods-price">¥ {{selectSizePrice}}</view>-->
+   </view>
+   <view wx:if="{{hasMoreSelect}}" class="row-arrow" bindtap="bindGuiGeTap">
+      {{selectSize}}
+   </view>
+    <view class="goods-des-info">
+        <view class="label-title">课程介绍</view>
+        <view class="goods-text">
+            <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+         </view>
+    </view>
+    <view class="footer-box">
+        <!--<view class="shop-cart-btn" bindtap="goShopCar">
+            <view class="shop-num">({{shopNum}})</view>
+            待购课程
+        </view>
+        <view class="join-shop-cart" bindtap="addShopCar">加入待购</view>-->
+        <view class="now-buy" bindtap="tobuy">立即预定</view>
+    </view>
+    <view class="show-popup" hidden="{{hideShopPopup}}" >
+        <view class="popup-mask" bindtap="closePopupTap"></view>
+        <view class="popup-contents">
+             <view class="pop-goods-info">
+                <view class="pop-img-box">
+                    <image src="{{goodsDetail.basicInfo.pic}}" class="goods-thumbnail"/>
+                </view>
+                <view class="pop-goods-des">
+                    <view class="pop-goods-title">{{goodsDetail.basicInfo.name}}</view>
+                    <!--<view class="pop-goods-price">¥ {{selectSizePrice}}</view>-->
+                </view>
+                <view class="pop-goods-close" bindtap="closePopupTap"></view>
+             </view>
+             <view class="size-label-box">
+                <block wx:for="{{goodsDetail.properties}}" wx:for-item="property" wx:for-index="idx">
+                <view class="label">{{property.name}}</view> 
+                <view class="label-item-box">
+                    <view class="label-item {{item.active ? 'active' : '' }}" wx:for="{{property.childsCurGoods}}" bindtap="labelItemTap" data-propertyindex="{{idx}}" data-propertyid="{{property.id}}" data-propertyname="{{property.name}}" data-propertychildindex="{{index}}" data-propertychildid="{{item.id}}" data-propertychildname="{{item.name}}">
+                        {{item.name}}
+                    </view> 
+                </view>
+                </block>
+             </view> 
+             <view class="buy-num-box">
+                <view class="num-label">预定数量</view>
+                <view class="num-box">
+                    <view class="num-jian {{buyNumber == buyNumMin ? 'hui': ''}}" bindtap="numJianTap">-</view>
+                    <view class="num-input">
+                       <input  type="number" value="{{buyNumber}}" disabled/>
+                    </view>
+                    <view class="num-jia {{buyNumber== buyNumMax ? 'hui': ''}}" bindtap="numJiaTap">+</view>
+                </view>
+             </view>  
+             <view class="popup-join-btn" bindtap="tobuy">
+                立即预定
+             </view>
+        </view>
+    </view>
+</view>
+
+<modal title="预定确认" hidden="{{modalHidden}}"  bindconfirm="modalHide" bindcancel="modalHideCancle">
+    <view class="zan-font-15">
+        <text>{{modalContent}}</text>
+    </view>
+</modal>
