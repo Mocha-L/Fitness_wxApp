@@ -1,17 +1,19 @@
 # Fitness_wxApp 健身房微信小程序
-一个做给健身房预约课程的微信小程序
+
+两个做给健身房预约课程的微信小程序，仅前端。如果帮到你，请点个star哦。
 
 ## 项目源码
 
-开源代码不直接放在这里，被很多平台拿去了，需要的朋友可以关注我公众号，找到我的微信，加我微信，私发源码。
+MaxFitWeixinAPP --这个目录是下面左边的项目代码，目前图片都挂了，需要自己换一下图片。
 
+LionMuscleProj --这个目录是下面右边的项目代码。
 
 ## 扫码体验
 
 ![qr](https://github.com/Mocha-L/Fitness_wxApp/blob/master/res/my_qr.jpg)
 ![qr](https://github.com/Mocha-L/Fitness_wxApp/blob/master/res/lm.jpg)
 
-右边是新版本新界面，展示效果更好，需要的可以联系我(右边的源码是有偿提供￥69元)。
+右边是新版本新界面，展示效果更好。
 
 后台上传图片资源较大，加载较慢，不会P图，请谅解。
 
